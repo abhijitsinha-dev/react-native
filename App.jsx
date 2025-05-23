@@ -12,6 +12,7 @@ import SectionListScreen from './src/components/SectionListScreen';
 import LoginForm from './src/components/LoginForm';
 import ContactListScreen from './src/screens/Contact/ContactListScreen';
 import Grid from './src/components/Grid';
+import ClassComponent from './src/components/ClassComponent';
 
 const App = () => {
   return (
@@ -28,8 +29,9 @@ const App = () => {
       <FlatListScreen />
       <SectionListScreen />
       <LoginForm />
-      <ContactListScreen /> */}
-      <Grid />
+      <ContactListScreen />
+      <Grid /> */}
+      <ClassComponent />
     </View>
   );
 };
