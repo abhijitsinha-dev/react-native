@@ -1,13 +1,21 @@
-import {View, Text} from 'react-native';
-import React from 'react';
+import {StyleSheet, Text, View} from 'react-native';
+import React, {Component} from 'react';
 
-const Child = ({count}) => {
-  return (
-    <View>
-      <Text style={{fontSize: 30}}>Child</Text>
-      <Text style={{fontSize: 30}}>Count {count}</Text>
-    </View>
-  );
-};
+class Child extends Component {
+  render() {
+    return (
+      <View>
+        <Text style={styles.text}>Course: {this.props.course}</Text>
+        <Text style={styles.text}>Rollno: {this.props.rollno}</Text>
+      </View>
+    );
+  }
+}
+
+const styles = StyleSheet.create({
+  text: {
+    fontSize: 20,
+  },
+});
 
 export default Child;
