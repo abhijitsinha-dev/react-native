@@ -13,6 +13,7 @@ import LoginForm from './src/components/LoginForm';
 import ContactListScreen from './src/screens/Contact/ContactListScreen';
 import Grid from './src/components/Grid';
 import ClassComponent from './src/components/ClassComponent';
+import UseEffectHook from './src/components/UseEffectHook';
 
 const App = () => {
   return (
@@ -30,8 +31,9 @@ const App = () => {
       <SectionListScreen />
       <LoginForm />
       <ContactListScreen />
-      <Grid /> */}
-      <ClassComponent />
+      <Grid />
+      <ClassComponent /> */}
+      <UseEffectHook />
     </View>
   );
 };
