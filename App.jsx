@@ -10,6 +10,7 @@ import Styling from './src/components/Styling';
 import FlatListScreen from './src/components/FlatListScreen';
 import SectionListScreen from './src/components/SectionListScreen';
 import LoginForm from './src/components/LoginForm';
+import ContactListScreen from './src/screens/Contact/ContactListScreen';
 
 const App = () => {
   return (
@@ -24,8 +25,9 @@ const App = () => {
       <InputText />
       <Styling />
       <FlatListScreen />
-      <SectionListScreen /> */}
-      <LoginForm />
+      <SectionListScreen />
+      <LoginForm /> */}
+      <ContactListScreen />
     </View>
   );
 };
