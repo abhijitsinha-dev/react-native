@@ -11,10 +11,11 @@ import FlatListScreen from './src/components/FlatListScreen';
 import SectionListScreen from './src/components/SectionListScreen';
 import LoginForm from './src/components/LoginForm';
 import ContactListScreen from './src/screens/Contact/ContactListScreen';
+import Grid from './src/components/Grid';
 
 const App = () => {
   return (
-    <View>
+    <View style={{flex: 1}}>
       {/* <Text>Abhijit</Text>
       <Button title="Press Here" />
       <First />
@@ -26,8 +27,9 @@ const App = () => {
       <Styling />
       <FlatListScreen />
       <SectionListScreen />
-      <LoginForm /> */}
-      <ContactListScreen />
+      <LoginForm />
+      <ContactListScreen /> */}
+      <Grid />
     </View>
   );
 };
