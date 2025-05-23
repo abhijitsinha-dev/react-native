@@ -14,6 +14,7 @@ import ContactListScreen from './src/screens/Contact/ContactListScreen';
 import Grid from './src/components/Grid';
 import ClassComponent from './src/components/ClassComponent';
 import UseEffectHook from './src/components/UseEffectHook';
+import HideShowToggle from './src/components/HideShowToggle';
 
 const App = () => {
   return (
@@ -32,8 +33,9 @@ const App = () => {
       <LoginForm />
       <ContactListScreen />
       <Grid />
-      <ClassComponent /> */}
-      <UseEffectHook />
+      <ClassComponent />
+      <UseEffectHook /> */}
+      <HideShowToggle />
     </View>
   );
 };

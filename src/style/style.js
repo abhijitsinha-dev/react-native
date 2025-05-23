@@ -1,6 +1,9 @@
-import {StyleSheet} from 'react-native';
+import {StatusBar, StyleSheet} from 'react-native';
 
 const styles = StyleSheet.create({
+  container: {
+    paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight : 0,
+  },
   text: {
     color: 'aliceblue',
     backgroundColor: 'olive',
