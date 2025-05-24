@@ -15,6 +15,7 @@ import Grid from './src/components/Grid';
 import ClassComponent from './src/components/ClassComponent';
 import UseEffectHook from './src/components/UseEffectHook';
 import HideShowToggle from './src/components/HideShowToggle';
+import ButtonStyling from './src/components/ButtonStyling';
 
 const App = () => {
   return (
@@ -34,8 +35,9 @@ const App = () => {
       <ContactListScreen />
       <Grid />
       <ClassComponent />
-      <UseEffectHook /> */}
-      <HideShowToggle />
+      <UseEffectHook />
+      <HideShowToggle /> */}
+      <ButtonStyling />
     </View>
   );
 };
