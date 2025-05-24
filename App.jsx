@@ -19,6 +19,7 @@ import ButtonStyling from './src/components/ButtonStyling';
 import Loader from './src/components/Loader';
 import PressableButton from './src/components/PressableButton';
 import StatusbarComponent from './src/components/StatusbarComponent';
+import UseRefHook from './src/components/UseRefHook';
 
 const App = () => {
   return (
@@ -41,8 +42,9 @@ const App = () => {
       <UseEffectHook />
       <HideShowToggle />
       <ButtonStyling />
-      <PressableButton /> */}
-      <StatusbarComponent />
+      <PressableButton />
+      <StatusbarComponent /> */}
+      <UseRefHook />
     </View>
   );
 };
