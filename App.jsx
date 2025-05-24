@@ -20,6 +20,7 @@ import Loader from './src/components/Loader';
 import PressableButton from './src/components/PressableButton';
 import StatusbarComponent from './src/components/StatusbarComponent';
 import UseRefHook from './src/components/UseRefHook';
+import ModalDialogBox from './src/components/ModalDialogBox';
 
 const App = () => {
   return (
@@ -43,8 +44,9 @@ const App = () => {
       <HideShowToggle />
       <ButtonStyling />
       <PressableButton />
-      <StatusbarComponent /> */}
-      <UseRefHook />
+      <StatusbarComponent />
+      <UseRefHook /> */}
+      <ModalDialogBox />
     </View>
   );
 };
