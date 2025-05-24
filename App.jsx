@@ -21,6 +21,7 @@ import PressableButton from './src/components/PressableButton';
 import StatusbarComponent from './src/components/StatusbarComponent';
 import UseRefHook from './src/components/UseRefHook';
 import ModalDialogBox from './src/components/ModalDialogBox';
+import AlertMessage from './src/components/AlertMessage';
 
 const App = () => {
   return (
@@ -45,8 +46,9 @@ const App = () => {
       <ButtonStyling />
       <PressableButton />
       <StatusbarComponent />
-      <UseRefHook /> */}
-      <ModalDialogBox />
+      <UseRefHook />
+      <ModalDialogBox /> */}
+      <AlertMessage />
     </View>
   );
 };
