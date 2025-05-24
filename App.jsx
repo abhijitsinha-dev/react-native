@@ -16,6 +16,7 @@ import ClassComponent from './src/components/ClassComponent';
 import UseEffectHook from './src/components/UseEffectHook';
 import HideShowToggle from './src/components/HideShowToggle';
 import ButtonStyling from './src/components/ButtonStyling';
+import Loader from './src/components/Loader';
 
 const App = () => {
   return (
@@ -36,8 +37,9 @@ const App = () => {
       <Grid />
       <ClassComponent />
       <UseEffectHook />
-      <HideShowToggle /> */}
-      <ButtonStyling />
+      <HideShowToggle />
+      <ButtonStyling /> */}
+      <Loader />
     </View>
   );
 };
