@@ -1,4 +1,4 @@
-import {View, Text, Platform, StatusBar} from 'react-native';
+import {View, Text, Platform, StatusBar, FlatList} from 'react-native';
 import React, {useEffect, useState} from 'react';
 import UserCard from './UserCard';
 
@@ -25,11 +25,12 @@ const GetApi = () => {
         flex: 1,
         backgroundColor: '#2d3436',
         paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight : 0,
-        alignItems: 'center',
       }}>
-      {fetchData?.map(user => (
-        <UserCard data={user} key={user.id} />
-      ))}
+      <FlatList
+        data={fetchData}
+        renderItem={user => <UserCard data={user.item} />}
+        keyExtractor={user => user.id}
+      />
     </View>
   );
 };
