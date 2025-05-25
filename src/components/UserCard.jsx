@@ -5,13 +5,13 @@ const UserCard = ({data}) => {
   return (
     <View style={styles.mainContainer}>
       <View style={styles.nameContainer}>
-        <Text style={styles.nameText}>{data.name}</Text>
+        <Text style={styles.nameText}>{data?.name}</Text>
       </View>
       <View style={styles.textContainer}>
-        <Text style={styles.textContent}>User ID: {data.id}</Text>
-        <Text style={styles.textContent}>Age: {data.age}</Text>
+        <Text style={styles.textContent}>User ID: {data?.id}</Text>
+        <Text style={styles.textContent}>Age: {data?.age}</Text>
         <Text style={styles.textContent}>
-          Student: {data.isStudent ? 'Yes' : 'No'}
+          Student: {data?.isStudent ? 'Yes' : 'No'}
         </Text>
         <Text style={styles.textContent}>
           Hobbies: {data?.hobbies?.map(hobby => ' ' + hobby)}
@@ -30,6 +30,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     marginBottom: 20,
     width: '70%',
+    marginHorizontal: 'auto',
   },
   nameContainer: {
     backgroundColor: '#222f3e',

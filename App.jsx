@@ -28,28 +28,28 @@ const App = () => {
   return (
     <View style={{flex: 1}}>
       {/* <Text>Abhijit</Text>
-      <Button title="Press Here" />
-      <First />
-      <JSX />
-      <OnPress />
-      <UseStateHook />
-      <Props />
-      <InputText />
-      <Styling />
-      <FlatListScreen />
-      <SectionListScreen />
-      <LoginForm />
-      <ContactListScreen />
-      <Grid />
-      <ClassComponent />
-      <UseEffectHook />
-      <HideShowToggle />
-      <ButtonStyling />
-      <PressableButton />
-      <StatusbarComponent />
-      <UseRefHook />
-      <ModalDialogBox />
-      <AlertMessage /> */}
+      <Button title="Press Here" /> */}
+      {/* <First /> */}
+      {/* <JSX /> */}
+      {/* <OnPress /> */}
+      {/* <UseStateHook /> */}
+      {/* <Props /> */}
+      {/* <InputText /> */}
+      {/* <Styling /> */}
+      {/* <FlatListScreen /> */}
+      {/* <SectionListScreen /> */}
+      {/* <LoginForm /> */}
+      {/* <ContactListScreen /> */}
+      {/* <Grid /> */}
+      {/* <ClassComponent /> */}
+      {/* <UseEffectHook /> */}
+      {/* <HideShowToggle /> */}
+      {/* <ButtonStyling /> */}
+      {/* <PressableButton /> */}
+      {/* <StatusbarComponent /> */}
+      {/* <UseRefHook /> */}
+      {/* <ModalDialogBox /> */}
+      {/* <AlertMessage /> */}
       <GetApi />
     </View>
   );
