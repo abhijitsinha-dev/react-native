@@ -8,14 +8,10 @@ const UserCard = ({data}) => {
         <Text style={styles.nameText}>{data?.name}</Text>
       </View>
       <View style={styles.textContainer}>
-        <Text style={styles.textContent}>User ID: {data?.id}</Text>
-        <Text style={styles.textContent}>Age: {data?.age}</Text>
-        <Text style={styles.textContent}>
-          Student: {data?.isStudent ? 'Yes' : 'No'}
-        </Text>
-        <Text style={styles.textContent}>
-          Hobbies: {data?.hobbies?.map(hobby => ' ' + hobby)}
-        </Text>
+        <Text style={styles.textContent}>Rollno: {data?.rollno}</Text>
+        <Text style={styles.textContent}>Class: {data?.class}</Text>
+        <Text style={styles.textContent}>Section: {data.section}</Text>
+        <Text style={styles.textContent}>Age: {data.age}</Text>
       </View>
     </View>
   );
@@ -48,7 +44,6 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     paddingVertical: 5,
     fontSize: 16,
-    textTransform: 'capitalize',
   },
   textContainer: {
     paddingVertical: 10,
