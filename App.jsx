@@ -1,6 +1,5 @@
 import {View, Text, Button} from 'react-native';
 import React from 'react';
-import PostApi from './src/components/PostApi';
 // import First from './src/components/First';
 // import JSX from './src/components/JSX';
 // import OnPress from './src/components/OnPress';
@@ -23,7 +22,8 @@ import PostApi from './src/components/PostApi';
 // import UseRefHook from './src/components/UseRefHook';
 // import ModalDialogBox from './src/components/ModalDialogBox';
 // import AlertMessage from './src/components/AlertMessage';
-// import GetApi from './src/components/GetApi';
+import GetApi from './src/components/GetApi';
+// import PostApi from './src/components/PostApi';
 
 const App = () => {
   return (
@@ -51,8 +51,8 @@ const App = () => {
       {/* <UseRefHook /> */}
       {/* <ModalDialogBox /> */}
       {/* <AlertMessage /> */}
-      {/* <GetApi /> */}
-      <PostApi />
+      <GetApi />
+      {/* <PostApi /> */}
     </View>
   );
 };
