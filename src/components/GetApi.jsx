@@ -1,4 +1,4 @@
-import {View, Text, Platform, StatusBar, FlatList} from 'react-native';
+import {View, Platform, StatusBar, FlatList} from 'react-native';
 import React, {useEffect, useState} from 'react';
 import UserCard from './UserCard';
 
@@ -7,7 +7,7 @@ const GetApi = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('http://10.0.2.2:3000/users');
+        const response = await fetch('http://10.0.2.2:3000/students');
         const result = await response.json();
 
         setFetchData(result);
@@ -28,8 +28,8 @@ const GetApi = () => {
       }}>
       <FlatList
         data={fetchData}
-        renderItem={user => <UserCard data={user.item} />}
-        keyExtractor={user => user.id}
+        renderItem={std => <UserCard data={std.item} key={std.item.id} />}
+        keyExtractor={std => std.id}
       />
     </View>
   );
