@@ -1,52 +1,64 @@
-# React Native Basics
+# React Native Learning Journey
 
-Today I explored core React Native concepts, building on my React.js knowledge.
+## Core Concepts
 
-## What I Covered
-
-- **Core Components**: `View`, `Text`, `Button`, `StyleSheet`
+- **Components**: `View`, `Text`, `Button`, `StyleSheet`
 - **Hooks**: `useState`, `useEffect`, `useCallback`
 - **Lists**: `FlatList` rendering
 
-### Today's Additions (23/05/2025)
+## Daily Progress
 
-- **Selection Lists**: Built interactive selectable lists
-- **Forms**: Created a login form with input handling
+### 23/05/2025
+
+- **Selection Lists**: Interactive selectable lists
+- **Forms**: Login form with input handling
 - **Custom Components**: Rendered in `FlatList`
 - **Grid Layout**: Designed using `map()` and `ScrollView`
-- **Class Components**: Compared with functional components
-- **Lifecycle Methods**: Implemented `useEffect` for side effects
-- **UI Toggles**: Button to hide/show components dynamically
+- **Component Types**: Functional vs Class components
+- **Lifecycle**: `useEffect` for side effects
+- **UI Dynamics**: Toggle component visibility
 
-### Intermediate Learnings (25/05/2025)
+### 25/05/2025
 
-- **Touch Components**:
-  - Compared `TouchableOpacity` vs `TouchableHighlight`
-  - Why to avoid default `Button` component
-  - Explored `Pressable` with all states (`onPressIn`, `onPressOut`)
-  - Handled `LongPress` quirks and timing
-- **Feedback Components**:
-  - Built custom loader with `ActivityIndicator`
-  - Implemented `Modal` for focused content
-  - Used `Alert` for system notifications
+- **Touch Handling**:
+  - `TouchableOpacity` vs `TouchableHighlight`
+  - `Pressable` with all states (`onPressIn`, `onPressOut`)
+  - Long press timing handling
+- **Feedback Systems**:
+  - Custom `ActivityIndicator` loader
+  - `Modal` for focused content
+  - System `Alert` implementation
 - **System UI**:
-  - Customized `StatusBar` behavior
-  - Controlled focus with `useRef`
+  - `StatusBar` customization
+  - Focus control with `useRef`
 
-### New Learnings (27/05/2025)
+### 27/05/2025
 
 - **API Integration**:
-  - Implemented CRUD operations using `fetch` (GET, POST, PUT, PATCH, DELETE)
-  - Error handling with `try/catch` blocks
-- **Search Functionality**:
-  - Created real-time name-based search filter
-  - Case-insensitive text matching
-- **Data Management**:
-  - Fetched and displayed API data using `FlatList`
-  - Used `json-server` for mock backend
-- **Platform-Specific Code**:
-  - Implemented OS-specific components using `Platform.select`
-  - Different styling for iOS/Android
-- **Performance Optimization**:
-  - Used `FlatList` for efficient rendering
-  - Implemented proper API cleanup in `useEffect`
+  - CRUD operations with `fetch`
+  - Error handling patterns
+- **Search**:
+  - Real-time name filtering
+  - Case-insensitive matching
+- **Data Flow**:
+  - API data display in `FlatList`
+  - `json-server` mock backend
+- **Platform Adaptation**:
+  - `Platform.select` usage
+  - OS-specific styling
+- **Performance**:
+  - Efficient list rendering
+  - API cleanup in effects
+
+### 28/05/2025 (Today)
+
+- **Navigation**:
+  - Stack navigation setup
+  - Screen transition handling
+- **Data Passing**:
+  - Params between screens
+- **UI/UX**:
+  - Header customization
+  - Navigation styling
+- **Optimization**:
+  - Component lifecycle with navigation
