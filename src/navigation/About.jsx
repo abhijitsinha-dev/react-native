@@ -3,17 +3,12 @@ import React from 'react';
 
 const About = ({navigation}) => {
   return (
-    <View style={styles.mainContainer}>
-      <Text style={styles.Heading}>About</Text>
+    <View>
+      <Text style={styles.Heading}>About Screen</Text>
       <TouchableOpacity
         style={styles.button}
         onPress={() => navigation.navigate('Contact')}>
         <Text style={styles.buttonText}>Contact</Text>
-      </TouchableOpacity>
-      <TouchableOpacity
-        style={styles.button}
-        onPress={() => navigation.goBack()}>
-        <Text style={styles.buttonText}>Back</Text>
       </TouchableOpacity>
     </View>
   );
@@ -22,24 +17,18 @@ const About = ({navigation}) => {
 export default About;
 
 const styles = StyleSheet.create({
-  mainContainer: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
   Heading: {
-    color: '#8e44ad',
+    color: 'white',
     fontSize: 20,
   },
   button: {
+    backgroundColor: '#16a085',
+    borderRadius: 20,
     paddingVertical: 10,
-    paddingHorizontal: 20,
     marginTop: 20,
-    borderRadius: 15,
-    backgroundColor: 'olive',
   },
   buttonText: {
     color: 'white',
-    fontSize: 18,
+    textAlign: 'center',
   },
 });

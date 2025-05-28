@@ -7,7 +7,7 @@ const Home = props => {
   console.log(username);
 
   return (
-    <View style={styles.mainContainer}>
+    <View>
       <Text style={styles.Heading}>Hello {username}</Text>
       <TouchableOpacity
         style={styles.button}
@@ -21,24 +21,18 @@ const Home = props => {
 export default Home;
 
 const styles = StyleSheet.create({
-  mainContainer: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
   Heading: {
-    color: '#8e44ad',
+    color: 'white',
     fontSize: 20,
   },
   button: {
+    backgroundColor: '#16a085',
+    borderRadius: 20,
     paddingVertical: 10,
-    paddingHorizontal: 20,
     marginTop: 20,
-    borderRadius: 15,
-    backgroundColor: 'olive',
   },
   buttonText: {
     color: 'white',
-    fontSize: 18,
+    textAlign: 'center',
   },
 });

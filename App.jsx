@@ -11,7 +11,18 @@ const Stack = createNativeStackNavigator();
 const App = () => {
   return (
     <NavigationContainer>
-      <Stack.Navigator>
+      <Stack.Navigator
+        screenOptions={{
+          headerTitle: '',
+          headerTintColor: 'white',
+          headerTransparent: true,
+          contentStyle: {
+            flex: 1,
+            backgroundColor: '#1abc9c',
+            justifyContent: 'center',
+            alignItems: 'center',
+          },
+        }}>
         <Stack.Screen
           name="Login"
           component={Login}
@@ -24,17 +35,9 @@ const App = () => {
           options={{headerShown: false}}
         />
 
-        <Stack.Screen
-          name="About"
-          component={About}
-          options={{headerShown: false}}
-        />
+        <Stack.Screen name="About" component={About} />
 
-        <Stack.Screen
-          name="Contact"
-          component={Contact}
-          options={{headerShown: false}}
-        />
+        <Stack.Screen name="Contact" component={Contact} />
       </Stack.Navigator>
     </NavigationContainer>
   );
