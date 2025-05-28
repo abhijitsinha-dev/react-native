@@ -1,10 +1,14 @@
 import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
 import React from 'react';
 
-const Home = ({navigation}) => {
+const Home = props => {
+  const {navigation, route} = props;
+  const {username} = route.params;
+  console.log(username);
+
   return (
     <View style={styles.mainContainer}>
-      <Text style={styles.Heading}>Home Screen</Text>
+      <Text style={styles.Heading}>Hello {username}</Text>
       <TouchableOpacity
         style={styles.button}
         onPress={() => navigation.navigate('About')}>
