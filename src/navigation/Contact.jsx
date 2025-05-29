@@ -3,7 +3,7 @@ import React from 'react';
 
 const Contact = ({navigation}) => {
   return (
-    <View>
+    <View style={styles.mainContainer}>
       <Text style={styles.Heading}>Contact Screen</Text>
     </View>
   );
@@ -12,6 +12,11 @@ const Contact = ({navigation}) => {
 export default Contact;
 
 const styles = StyleSheet.create({
+  mainContainer: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
   Heading: {
     color: 'white',
     fontSize: 20,
