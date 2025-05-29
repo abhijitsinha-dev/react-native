@@ -50,7 +50,7 @@
   - Efficient list rendering
   - API cleanup in effects
 
-### 28/05/2025 (Today)
+### 28/05/2025
 
 - **Navigation**:
   - Stack navigation setup
@@ -62,3 +62,15 @@
   - Navigation styling
 - **Optimization**:
   - Component lifecycle with navigation
+
+### 30/05/2025 (Today)
+
+- **Navigation Types**:
+  - Drawer, Top & Bottom Navigation
+- **Navigation Bar**:
+  - Setting custom icons
+  - Styling navigation elements
+- **Global Styling**:
+  - Consistent screen styling through navigation
+- **UI Patterns**:
+  - Unified look across all screens
