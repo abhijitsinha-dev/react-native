@@ -26,6 +26,8 @@ const Login = ({navigation}) => {
       <TextInput
         placeholder="Enter Your Name"
         placeholderTextColor={'white'}
+        cursorColor={'white'} //Android Only
+        selectionColor={'white'} // IOS Only
         value={username}
         onChangeText={setUsername}
         style={styles.textInput}
