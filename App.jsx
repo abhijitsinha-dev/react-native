@@ -1,41 +1,26 @@
 import React from 'react';
-import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {NavigationContainer} from '@react-navigation/native';
+import {createMaterialTopTabNavigator} from '@react-navigation/material-top-tabs';
 import Icon from 'react-native-vector-icons/Ionicons';
 import Home from './src/navigation/Home';
 import About from './src/navigation/About';
 import Contact from './src/navigation/Contact';
+import {Platform, StatusBar, Text, View} from 'react-native';
 
-const Tab = createBottomTabNavigator();
-
-const setTabIcon = (routeName, focused, color, size) => {
-  let iconname;
-
-  if (routeName === 'Home') {
-    iconname = focused ? 'home' : 'home-outline';
-  } else if (routeName === 'About') {
-    iconname = focused ? 'information-circle' : 'information-circle-outline';
-  } else if (routeName === 'Contact') {
-    iconname = focused ? 'mail' : 'mail-outline';
-  }
-
-  return <Icon name={iconname} color={color} size={size} />;
-};
+const Tab = createMaterialTopTabNavigator();
 
 const App = () => {
   return (
     <NavigationContainer>
       <Tab.Navigator
         screenOptions={({route}) => ({
-          headerTitle: '',
-          headerTransparent: true,
-          tabBarInactiveBackgroundColor: '#1abc9c',
-          tabBarInactiveTintColor: 'white',
-          tabBarActiveBackgroundColor: '#16a085',
-          tabBarActiveTintColor: 'white',
+          tabBarStyle: {
+            backgroundColor: '#1abc9c',
+            paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight : 0,
+          },
+          tabBarLabelStyle: {color: 'white'},
+          tabBarIndicatorStyle: {backgroundColor: '#34495e'},
           sceneStyle: {backgroundColor: '#1abc9c'},
-          tabBarIcon: ({focused, color, size}) =>
-            setTabIcon(route.name, focused, color, size),
         })}>
         <Tab.Screen name="Home" component={Home} />
         <Tab.Screen name="About" component={About} />
