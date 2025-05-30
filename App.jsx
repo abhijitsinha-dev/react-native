@@ -1,11 +1,11 @@
 import {View, Text} from 'react-native';
 import React from 'react';
-import AsyncStorageEx from './src/components/AsyncStorageEx';
+import ImageComponent from './src/components/ImageComponent';
 
 const App = () => {
   return (
     <View style={{flex: 1}}>
-      <AsyncStorageEx />
+      <ImageComponent />
     </View>
   );
 };

@@ -63,7 +63,7 @@
 - **Optimization**:
   - Component lifecycle with navigation
 
-### 30/05/2025 (Today)
+### 30/05/2025
 
 - **Navigation Types**:
   - Drawer, Top & Bottom Navigation
@@ -74,3 +74,12 @@
   - Consistent screen styling through navigation
 - **UI Patterns**:
   - Unified look across all screens
+
+### 31/05/2025 (Today)
+
+- **AsyncStorage**: Basics and usage patterns
+- **Image Handling**:
+  - `ImageBackground` component
+  - Foreground/background image styling
+  - Displaying images via URI
+  - Loading images from local paths
