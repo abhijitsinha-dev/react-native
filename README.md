@@ -75,7 +75,7 @@
 - **UI Patterns**:
   - Unified look across all screens
 
-### 31/05/2025 (Today)
+### 31/05/2025
 
 - **AsyncStorage**: Basics and usage patterns
 - **Image Handling**:
@@ -83,3 +83,17 @@
   - Foreground/background image styling
   - Displaying images via URI
   - Loading images from local paths
+
+### 21/06/2025
+
+- **Redux Implementation**:
+  - Created user slice with Redux Toolkit
+  - Configured Redux store
+  - State management with `useSelector` and `useDispatch`
+  - Navigation integration with state updates
+- **Form Handling**:
+  - Login form with Redux state persistence
+  - Input validation and error alerts
+- **UI Components**:
+  - Welcome screen with personalized greeting
+  - Responsive styling with StyleSheet
