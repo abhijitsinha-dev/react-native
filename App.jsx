@@ -1,12 +1,25 @@
-import {View, Text} from 'react-native';
 import React from 'react';
-import ImageComponent from './src/components/ImageComponent';
+import {NavigationContainer} from '@react-navigation/native';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import {Provider} from 'react-redux';
+import store from './src/redux/store/store';
+import Login from './src/components/form/Login';
+import WelcomePage from './src/components/form/WelcomePage';
+
+const Stack = createNativeStackNavigator();
 
 const App = () => {
   return (
-    <View style={{flex: 1}}>
-      <ImageComponent />
-    </View>
+    <Provider store={store}>
+      <NavigationContainer>
+        <Stack.Navigator
+          initialRouteName="Login"
+          screenOptions={{headerTransparent: true, title: ''}}>
+          <Stack.Screen name="Login" component={Login} />
+          <Stack.Screen name="Welcome" component={WelcomePage} />
+        </Stack.Navigator>
+      </NavigationContainer>
+    </Provider>
   );
 };
 
