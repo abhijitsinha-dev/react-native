@@ -97,3 +97,16 @@
 - **UI Components**:
   - Welcome screen with personalized greeting
   - Responsive styling with StyleSheet
+
+### 22/06/2025
+
+- **Styling**:
+  - Implemented NativeWind for Tailwind-like styling
+  - Utility-first CSS approach
+- **State Management**:
+  - Zustand store setup
+  - Simplified state actions
+  - Comparison with Redux implementation
+- **Integration**:
+  - Combined Zustand with existing components
+  - State persistence patterns
