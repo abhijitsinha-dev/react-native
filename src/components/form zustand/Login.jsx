@@ -35,11 +35,11 @@ const Login = () => {
   };
 
   return (
-    <View style={styles.container}>
-      <Text style={styles.title}>Login</Text>
+    <View className="flex-1 justify-center p-5">
+      <Text className="text-[24px] font-bold mb-5 text-center">Login</Text>
 
       <TextInput
-        style={styles.input}
+        className="h-[50px] border border-gray-300 rounded-[5px] px-4 mb-4 text-base"
         placeholder="Username"
         value={username}
         onChangeText={setUsername}
@@ -47,52 +47,20 @@ const Login = () => {
       />
 
       <TextInput
-        style={styles.input}
+        className="h-[50px] border border-gray-300 rounded-[5px] px-4 mb-4 text-base"
         placeholder="Password"
         value={password}
         onChangeText={setPassword}
         secureTextEntry
       />
 
-      <TouchableOpacity style={styles.button} onPress={handleLogin}>
-        <Text style={styles.buttonText}>Login</Text>
+      <TouchableOpacity
+        className="bg-blue-600 py-4 px-6 rounded-[5px] items-center"
+        onPress={handleLogin}>
+        <Text className="text-white text-[18px] font-bold">Login</Text>
       </TouchableOpacity>
     </View>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    padding: 20,
-  },
-  title: {
-    fontSize: 24,
-    fontWeight: 'bold',
-    marginBottom: 20,
-    textAlign: 'center',
-  },
-  input: {
-    height: 50,
-    borderWidth: 1,
-    borderColor: '#ccc',
-    borderRadius: 5,
-    paddingHorizontal: 15,
-    marginBottom: 15,
-    fontSize: 16,
-  },
-  button: {
-    backgroundColor: '#007bff',
-    padding: 15,
-    borderRadius: 5,
-    alignItems: 'center',
-  },
-  buttonText: {
-    color: 'white',
-    fontSize: 18,
-    fontWeight: 'bold',
-  },
-});
 
 export default Login;
