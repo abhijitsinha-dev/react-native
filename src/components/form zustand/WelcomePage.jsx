@@ -6,38 +6,16 @@ const WelcomePage = () => {
   const {username} = useUserStore();
 
   return (
-    <View style={styles.container}>
-      <Text style={styles.welcomeText}>Welcome,</Text>
-      <Text style={styles.usernameText}>{username}!</Text>
-      <Text style={styles.messageText}>We're glad to see you again.</Text>
+    <View className="flex-1 justify-center items-center bg-[#f0f8ff] p-[20px]">
+      <Text className="text-[28px] text-[#333] mb-[10px]">Welcome,</Text>
+      <Text className="text-[32px] font-bold text-[#0066cc] mb-[20px]">
+        {username}!
+      </Text>
+      <Text className="text-[18px] text-[#555] italic">
+        We're glad to see you again.
+      </Text>
     </View>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#f0f8ff', // Light blue background
-    padding: 20,
-  },
-  welcomeText: {
-    fontSize: 28,
-    color: '#333',
-    marginBottom: 10,
-  },
-  usernameText: {
-    fontSize: 32,
-    fontWeight: 'bold',
-    color: '#0066cc',
-    marginBottom: 20,
-  },
-  messageText: {
-    fontSize: 18,
-    color: '#555',
-    fontStyle: 'italic',
-  },
-});
 
 export default WelcomePage;

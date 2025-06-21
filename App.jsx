@@ -5,6 +5,7 @@ import {Provider} from 'react-redux';
 import store from './src/redux/store/store';
 import Login from './src/components/form zustand/Login';
 import WelcomePage from './src/components/form zustand/WelcomePage';
+import './global.css';
 
 const Stack = createNativeStackNavigator();
 
