@@ -100,13 +100,18 @@
 
 ### 22/06/2025
 
-- **Styling**:
-  - Implemented NativeWind for Tailwind-like styling
-  - Utility-first CSS approach
-- **State Management**:
-  - Zustand store setup
-  - Simplified state actions
-  - Comparison with Redux implementation
+- **NativeWind**:
+  - Utility-first styling approach
+  - Tailwind-like syntax for React Native
+  - Responsive design with simple classes
+- **Zustand**:
+  - Lightweight state management
+  - Global store creation
+  - State persistence between screens
+  - Simple API compared to Redux
 - **Integration**:
-  - Combined Zustand with existing components
-  - State persistence patterns
+  - Combined Zustand with React Navigation
+  - State-triggered screen transitions
+- **Styling**:
+  - Applied NativeWind classes to components
+  - Dynamic text styling based on state
