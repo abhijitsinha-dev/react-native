@@ -3,8 +3,8 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {Provider} from 'react-redux';
 import store from './src/redux/store/store';
-import Login from './src/components/form/Login';
-import WelcomePage from './src/components/form/WelcomePage';
+import Login from './src/components/form zustand/Login';
+import WelcomePage from './src/components/form zustand/WelcomePage';
 
 const Stack = createNativeStackNavigator();
 
