@@ -115,3 +115,13 @@
 - **Styling**:
   - Applied NativeWind classes to components
   - Dynamic text styling based on state
+
+### 27/06/2025
+
+- **React Native Reanimated**:
+  - Created flip card animation
+  - Used `useSharedValue` for animation state
+  - Implemented `useAnimatedStyle` for 3D transforms
+  - Added perspective for realistic rotation
+  - Spring animations with `withSpring`
+  - Front/back card visibility toggling
